@@ -1,6 +1,4 @@
-.nav-item {
-    float: right;
-}
+
 
 #status{
     width: 150px;
@@ -33,5 +31,12 @@
         opacity: 0;
         pointer-events: none;
     }
+}
+
+
+/* navbar section  */
+.nav-link{
+    padding-right: 30%;
+    padding-left: 30%;
 }
 
