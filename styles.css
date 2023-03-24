@@ -1,3 +1,5 @@
+
+
 #status{
     width: 150px;
     max-width: 500px;
@@ -29,5 +31,12 @@
         opacity: 0;
         pointer-events: none;
     }
+}
+
+
+/* navbar section  */
+.nav-link{
+    padding-right: 30%;
+    padding-left: 30%;
 }
 
