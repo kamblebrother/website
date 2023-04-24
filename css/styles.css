@@ -141,7 +141,7 @@ section{
 
 #menu-bars{
     font-size: 3rem;
-    color:#000s;
+    color:#000;
     cursor: pointer;
     display: none;
 }

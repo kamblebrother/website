@@ -425,21 +425,22 @@
 
     <section class="contact" id="contact">
 
-        <h1 class="heading"> <span>contact</span> us </h1>
+        <h1 class="heading"> <span>contact us</span>  </h1>
 
-        <form id="my-form" action="https://formspree.io/f/mvonrgwb" method="post">
+        <form action="https://formspree.io/f/mvonrgwb" method="post" id="my-form">
             <div name="row1" class="inputBox">
                 <input type="text" name="name" placeholder="name">
                 <input type="email" name="email" placeholder="email">
             </div>
             <div name="row2" class="inputBox">
-                <input type="number" name="number" placeholder="number">
+                <input type="text" name="number" placeholder="number">
                 <input type="text" name="subject" placeholder="subject">
             </div>
             <textarea name="message" placeholder="your message" id="" cols="30" rows="10"></textarea>
-            <input name="submit" type="submit" value="send message" class="btn" id="my-form-button">
-            <p name="" id="my-form-status"></p>
+            <button name="submit" type="submit"  class="btn" >send message</button>
+            <!-- <p name="" id="status"></p> -->
         </form>
+        <div id="status"></div>
 
     </section>
 
@@ -518,24 +519,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -565,4 +548,4 @@
 </form>
 </div>
 <div id="status" class=""></div>
-<script src="./main.js"></script> --> -->
+<script src="./main.js"></script> --> 
