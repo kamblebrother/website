@@ -112,10 +112,12 @@ section{
    font-weight: bolder;
    color:#fff;
    font-size: 2.5rem;
+   text-align: center;
 }
 
 .header .logo span{
    color:var(--main-color);
+   text-align: center;
 }
 
 .header .navbar a{
@@ -139,15 +141,16 @@ section{
 /* services */
 .services .heading-title{
    text-align: center;
-   margin-bottom: 3rem;
-   font-size: 6rem;
+   margin-bottom: 2rem;
+   font-size: 4rem;
    text-transform: uppercase;
-   color: #000;
+   color: var(--main-color);
+   margin-top: 10%;
    
 }
 
 .services .box-container{
-   padding-top: 10rem;
+   padding-top: 8rem;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
    gap: 1.5rem;
@@ -347,9 +350,27 @@ section{
 
 }
 
+@media only screen and (max-width:991px){
+   .grid{ 
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+   }
+  
+    
+}
 
 
-
+@media screen {
+   .services .heading-title{
+      margin-bottom: 2rem;
+      font-size: 3rem;
+      margin-top: 10rem;
+      
+   }
+   
+}
 
 
 
