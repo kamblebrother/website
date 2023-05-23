@@ -29,13 +29,15 @@
                         <input name="firstName" type="text" class="form-control" minlength="3" maxlength="20" required>
                     </div>
                     <div class="mb-3">
-                        <label for="name"  class="form-label">Last name</label>
+                        <label for="name" class="form-label">Last name</label>
                         <input name="lastName" type="text" class="form-control" minlength="3" maxlength="20" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Contact</label>
-                        <input name="contact"  type="text" class="form-control"  pattern="[6789][0-9]{9}" minlength="3" maxlength="10"required >
+                        <label>Contact</label>
+
+                        <input class="form-control" type="number" placeholder="+91" min="0" maxlength="10" required>
                     </div>
+
                     <div class="mb-3">
                         <label class="form-label">DOB</label>
                         <input name="DOB" type="text" class="form-control">
@@ -47,6 +49,14 @@
         </div>
     </div>
 
+    <script>
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.oninput = () => {
+                if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+            }
+        });
+    </script>
+
 </body>
 
-</html>
+</html
