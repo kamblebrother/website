@@ -638,3 +638,24 @@ section{
 
 }
 
+/* floating button */
+img {height: 100%;
+    position: relative;}
+    .aphid {height: 220px;}
+    .call {height: 55px;
+    width: 55px;
+    position: fixed;
+    right: 20px; border-radius: 50%;margin-top:450px ;
+    z-index: 9999;
+    box-shadow: #C3362B 1px 4px 6px 1px
+    }
+    .whatsapp{height: 55px;
+        width: 55px;
+    position: fixed;
+    right: 20px;border-radius: 50% ;
+    overflow: hidden;
+    top: 80px;
+    margin-top: 450px;
+    z-index: 9999;
+      box-shadow: green 1px 4px 6px 1px;}
+    
