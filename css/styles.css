@@ -659,3 +659,40 @@ img {height: 100%;
     z-index: 9999;
       box-shadow: green 1px 4px 6px 1px;}
     
+
+/* taking logo below to the web and app */
+    .container {
+        position: relative;
+      }
+      
+      .col-sm-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      
+      .whatsapp,
+      .call {
+        width: 50px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      
+      @media only screen and (max-width: 767px) {
+        /* Mobile Styles */
+        .container {
+          position: static;
+        }
+      
+        .col-sm-2 {
+          position: static;
+        }
+      
+        .whatsapp,
+        .call {
+          margin-bottom: 10px;
+          width: 50px;
+          margin-top: 750px;
+        }
+      }
+      
