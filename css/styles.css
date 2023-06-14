@@ -689,19 +689,23 @@ img {
 /* media */
 @media only screen and (max-width: 500px) {
     .call {
+        position: fixed;
         margin-top: 510px; 
     }
 
     .whatsapp {
+        position: fixed;
         margin-top: 510px;
     }
 }
 @media only screen and (max-width: 1000px) {
     .call {
+        position: fixed;
         margin-top: 510px;
     }
 
     .whatsapp {
+        position: fixed;
         margin-top: 510px;
     }
 }
