@@ -32,7 +32,9 @@
     }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
 
 :root {
     --main-color: #3867d6;
@@ -43,7 +45,8 @@ a {
 }
 
 * {
-    font-family: 'poppins', sans-serif;
+    /* font-family: 'poppins', sans-serif; */
+    font-family: "Work Sans", sans-serif;;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -189,7 +192,10 @@ section {
     object-fit: cover;
 }
 
-.service .box-container {
+/* thapa tec cards img css */
+
+/* end of teh thap tec css */
+/* .service .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap: 1.5rem;
@@ -197,11 +203,14 @@ section {
 
 .service .box-container .box {
     border-radius: .5rem;
-    background: #7cacd1;
+    background: #eef1f3;
     text-align: center;
     padding: 2.5rem;
 }
-
+.service .box-container .box .img1{
+    width: 350px;
+    
+}
 .service .box-container .box i {
     height: 6rem;
     width: 6rem;
@@ -222,8 +231,50 @@ section {
     font-size: 1.4rem;
     color: #fff;
     line-height: 1.8;
+} */
+
+/* service css */
+.service{
+    font-size: 500%;
+}
+.container{
+    margin-top: 8%;
 }
 
+.inner{
+    overflow: hidden;
+}
+.inner.img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+/* end service css */
+/* ------------------------------------------------------------------------------------- */
+/* service media query */
+@media screen and (min-width: 0px)and (max-width: 1200px) {
+    .col-md-3    {
+       width: 100%;
+       margin: 10px;
+    }
+    .col-md-3.inner{
+        overflow: hidden;
+    }
+    .col-md-3.inner.img{
+        transition: all 1.5s ease;
+    }
+    .col-md-3.inner:hover img{
+        transform: scale(1.5);
+    }
+  }
+
+  @media screen and (max-width: 462px){
+    .h1{
+        margin-top: 4em;
+    }
+  }
+/* end media query */
 .about .row {
     display: flex;
     align-items: center;
