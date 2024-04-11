@@ -51,19 +51,46 @@
             // Number of images
             var numImages = 47; // Change this to the number of images you have
 
+            const arr = [
+                'Welcome board',
+                'Jungle theme',
+                'Boss Baby',
+                'Birthday',
+                'Minnie theme',
+                'Butterfly theme',
+                'Welcome board',
+                'Birthday',
+                'Birthday',
+                'Butterfly theme',
+                'Butterfly theme',
+                'Welcome ring',
+                'Baby shower',
+                'Mermaid theme',
+            ]
+
             // Generate HTML for each image
             for (var i = 1; i <= numImages; i++) {
                 var imagePath = directory + i + ".png";
                 var cardHtml = '<div class="card my-4">' +
                     '<img src="' + imagePath + '" class="card-img-top" alt="...">' +
                     '<div class="card-body">' +
-                    '<h5 class="card-title">Card title</h5>' +
-                    '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>' +
-                    '<a href="#" class="btn btn-primary">Go somewhere</a>' +
+                    '<h5 class="card-title">'+arr[i-1]+'</h5>' +
                     '</div>' +
                     '</div>';
                 $("#imageCardsContainer").append(cardHtml);
             }
+            // for (var i = 1; i <= numImages; i++) {
+            //     var imagePath = directory + i + ".png";
+            //     var cardHtml = '<div class="card my-4">' +
+            //         '<img src="' + imagePath + '" class="card-img-top" alt="...">' +
+            //         '<div class="card-body">' +
+            //         '<h5 class="card-title">Card title</h5>' +
+            //         '<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card\'s content.</p>' +
+            //         '<a href="#" class="btn btn-primary">Go somewhere</a>' +
+            //         '</div>' +
+            //         '</div>';
+            //     $("#imageCardsContainer").append(cardHtml);
+            // }
         });
     </script>
 </body>
