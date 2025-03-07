@@ -146,6 +146,11 @@ section {
 .header .navbar a:hover {
     color: var(--main-color);
 }
+.header .logo span {
+
+    font-size:small;
+    color: #000;
+}
 
 #menu-bars {
     font-size: 3rem;
